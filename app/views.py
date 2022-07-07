@@ -7,7 +7,7 @@ from .models import ejemplo
 # Create your views here.
 
 def home(request):
-    return HttpResponse('<h1>Home</h1>')
+    return render(request, 'indexstartbootstrap.html')
 
 #Template ejemplo
 def template_ejemplo(request):
