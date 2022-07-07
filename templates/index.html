@@ -5,11 +5,13 @@
     <title> TEMPLATE EJEMPLO </title>
   </head>
   <body>
-    <h1> Este es el template </h1>
+    <h1> Template Ejemplo </h1>
     <p>
       <ul>
-        {% for objeto in lista_objeto %}
-        <li> {{objeto.nombre}} </li>
+        {% for ejemplo in lista_ejemplo %}
+        <h3>
+        <li> {{ejemplo.nombre}} </li>
+        </h3>
         {% endfor %}
       </ul>
     </p>

@@ -8,4 +8,6 @@
 - App con una sola vewis.py y urls.py <home> con sus import adecuados para que  el Server funcione (Se van a agregar mas durante el desarrollo)
 - Carpeta "templantes" y MVTSantiagoLopez> settings.py> 'DIRS': [r'C:\P1\templates']
 - Archivo <index.html> [r'C:\P1\templates\index.html']
-- Prueba de template. "path('template_ejemplo/', template_ejemplo)" funcional
+- Prueba de template funcional con lista_ejemplo. "path('template_ejemplo/', template_ejemplo)"
+- [r'C:\P1\MVTSantiagoLopez\settings.py]> INSTALLED_APPS = 'app', makemigracion en [r'app\migrations\0001_initial.py'] y migrate para que lo tome el db.sqlite3
+-
