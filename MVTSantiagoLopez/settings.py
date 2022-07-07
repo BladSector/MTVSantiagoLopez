@@ -54,7 +54,7 @@ ROOT_URLCONF = 'MVTSantiagoLopez.urls'
 TEMPLATES = [
     {
         'BACKEND': 'django.template.backends.django.DjangoTemplates',
-        'DIRS': [],
+        'DIRS': [r'C:\P1\templates'],
         'APP_DIRS': True,
         'OPTIONS': {
             'context_processors': [
