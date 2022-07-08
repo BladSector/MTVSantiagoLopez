@@ -1,4 +1,4 @@
-# MTV Santiago Lopez
+# MTV Santiago Lopez y Santiago Cuellar Dominguez
 
 - Proyecto de CoderHouse mi primer MTV base funcional
 - Proyecto no terminado aún (max 3 dias) y por ende no es para entregar
