@@ -50,6 +50,6 @@ con todas sus configuraciones para que sea funcional.
 
 - Cambie nombre archivo <indexstartbootstrap.html> [C:\P1\templates\indexstartbootstrap.html] a 'index_1.html'
 
--Cambie el nombre del archivo en  [C:\P1\templates\'index.html'] por [C:\P1\templates\'index_herencia.html']
+-Cambie el nombre del archivo en  [C:\P1\templates\'index.html'] por 'index_herencia.html'
 
 -Agregue una imagen como se muestra en el curso (detalles)
