@@ -1,8 +1,8 @@
 from django.urls import path
-from .views import base_templates, herencia_ejemplo
+from .views import home, herencia_ejemplo
 
 urlpatterns = [
-    path('', base_templates),
+    path('', home),
     path('herencia_ejemplo/', herencia_ejemplo)
 
 ]

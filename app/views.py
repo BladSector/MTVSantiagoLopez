@@ -9,7 +9,11 @@ from .models import ejemplo
 def base_templates(request):
     return render(request, 'base_templates.html')
 
-#Template ejemplo
+
+def home(request):
+    return render(request, 'index_1.html')
+
+
 def herencia_ejemplo(request):
     #template = loader.get_template('index.html')
     ejemplo1 = ejemplo(nombre='Santi1')

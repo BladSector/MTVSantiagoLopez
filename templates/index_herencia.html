@@ -6,15 +6,17 @@
 {% endblock title %}
 
 {% block title_h1 %}
-<h1 class="mb-5">Una humilde página <p>Template</p></h1>
+<h1 class="mb-5">Una humilde página
+  <p>Template</p>
+</h1>
 {% endblock title_h1 %}
 
 {% block pie_header %}
-  <p>
-    <ul>
-      {% for ejemplo in lista_ejemplo %}
-      <li> {{ejemplo.nombre}} </li>
-      {% endfor %}
-    </ul>
-  </p>
+<p>
+<ul>
+  {% for ejemplo in lista_ejemplo %}
+  <li> {{ejemplo.nombre}} </li>
+  {% endfor %}
+</ul>
+</p>
 {% endblock pie_header %}

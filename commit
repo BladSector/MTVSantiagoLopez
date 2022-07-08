@@ -53,3 +53,5 @@ con todas sus configuraciones para que sea funcional.
 -Cambie el nombre del archivo en  [C:\P1\templates\'index.html'] por 'index_herencia.html'
 
 -Agregue una imagen como se muestra en el curso (detalles)
+
+- Pase el codigio <header> de 'base_templates.html' a 'index_1.html'
