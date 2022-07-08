@@ -6,11 +6,11 @@ from .models import ejemplo
 
 # Create your views here.
 
-def home(request):
-    return render(request, 'indexstartbootstrap.html')
+def base_templates(request):
+    return render(request, 'base_templates.html')
 
 #Template ejemplo
-def template_ejemplo(request):
+def herencia_ejemplo(request):
     #template = loader.get_template('index.html')
     ejemplo1 = ejemplo(nombre='Santi1')
     ejemplo2 = ejemplo(nombre='Santi2')
@@ -20,5 +20,5 @@ def template_ejemplo(request):
     ejemplo3.save()
     #render = template.render({'lista_ejemplo': [ejemplo1, ejemplo2, ejemplo3)
     #return HttpResponse(render)
-    return render(request, 'index.html', {'lista_ejemplo': [ejemplo1, ejemplo2,
+    return render(request, 'index_herencia.html', {'lista_ejemplo': [ejemplo1, ejemplo2,
     ejemplo3]})
