@@ -26,3 +26,12 @@ En la misma direccion cambie: link href='{% static 'app/css/styles.css' %}'
 -----------------------------------------------------------------
 - A partir de acá se agregarán los objetivos de la clasePlayground Intermedio (parte 2).
 Intentaré ser más prolijo con los commit y los progresos que agrego al proyecto.
+
+- Introduje el Archivo <commit>
+
+- Introduje el Archivo <start.sh>
+
+- Borre en la Carpeta [C:\P1\templates\indexstartbootstrap.html]> el codigo desde
+' <!-- Icons Grid-->' hasta  <!-- Footer--> (no incluido el footer)
+
+- Herencias de Template [C:\P1\templates\index.html]
