@@ -5,11 +5,25 @@
 <title>HerenciaEjemplo</title>
 {% endblock title %}
 
-{% block title_h1 %}
-<h1 class="mb-5">Una humilde página
-  <p>Template</p>
-</h1>
-{% endblock title_h1 %}
+
+
+{% block header %}
+<header class="masthead">
+  <div class="container position-relative">
+    <div class="row justify-content-center">
+      <div class="col-xl-6">
+        <div class="text-center text-white">
+          {% block title_h1 %}
+          <h1 class="mb-5">Una humilde página
+            <p>Template</p>
+          </h1>
+          {% endblock title_h1 %}
+        </div>
+      </div>
+    </div>
+  </div>
+</header>
+{% endblock header %}
 
 {% block pie_header %}
 <p>

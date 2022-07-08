@@ -27,7 +27,7 @@ En la misma direccion cambie: link href='{% static 'app/css/styles.css' %}'
 - Todo funcional hasta commit_5 (Commits on Jul 7, 2022)
 -----------------------------------------------------------------
 - A partir de acá se agregarán los objetivos de la clasePlayground Intermedio (parte 2).
-Intentaré ser más prolijo con los commit en la proxima entrega.
+Intentaré ser más prolijo con los commit - m en la proxima entrega.
 Los progresos que agrego al proyecto.
 
 - Introduje el Archivo <commit>
@@ -55,3 +55,9 @@ con todas sus configuraciones para que sea funcional.
 -Agregue una imagen como se muestra en el curso (detalles)
 
 - Pase el codigio <header> de 'base_templates.html' a 'index_1.html'
+
+- Enlace los enlaces url de 'home' y 'herencia_ejemplo'
+
+- Agregue el super usuario
+
+- Agregue Class: 'ejemplos' 
