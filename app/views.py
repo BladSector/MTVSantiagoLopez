@@ -1,8 +1,11 @@
 from django.shortcuts import render
 from django.http import HttpResponse
 from django.template import loader
+from datetime import datetime
 
-from .models import ejemplo
+from .models import Santi
+from .forms import FormSanti
+from .forms import BusquedaSanti
 
 # Create your views here.
 
@@ -14,15 +17,44 @@ def home(request):
     return render(request, 'index_1.html')
 
 
-def herencia_ejemplo(request):
-    #template = loader.get_template('index.html')
-    ejemplo1 = ejemplo(nombre='Santi1')
-    ejemplo2 = ejemplo(nombre='Santi2')
-    ejemplo3 = ejemplo(nombre='Santi3')
-    ejemplo1.save()
-    ejemplo2.save()
-    ejemplo3.save()
-    #render = template.render({'lista_ejemplo': [ejemplo1, ejemplo2, ejemplo3)
-    #return HttpResponse(render)
-    return render(request, 'index_herencia.html', {'lista_ejemplo': [ejemplo1, ejemplo2,
-    ejemplo3]})
+def crear_santi(request):
+
+    if request.method == 'POST':
+        form = FormSanti(request.POST)
+
+        if form.is_valid():
+            data = form.cleaned_data
+
+            fecha = data.get('fecha_creacion')
+
+            santi = Santi(
+                nombre=data.get('nombre'),
+                edad=data.get('edad'),
+                fecha_creacion=fecha if fecha else datetime.now())
+
+            santi.save()
+
+            listado_santi = Santi.objects.all()
+            form = BusquedaSanti()
+            return render(request, 'listado_santi.html', {'listado_santi':listado_santi, 'form': form})
+
+        else:
+            return render(request,'crear_santi.html', {'form': form})
+
+    form_santi = FormSanti()
+    return render(request, 'crear_santi.html', {'form': form_santi})
+
+def listado_santi(request):
+
+    nombre_busqueda= request.GET.get('nombre')
+
+    if nombre_busqueda :
+        listado_santi = Santi.objects.filter(nombre__icontains=nombre_busqueda)
+    else:
+        listado_santi = Santi.objects.all()
+
+    form = BusquedaSanti()
+    return render(request, 'listado_santi.html', {'listado_santi':listado_santi, 'form': form})
+
+def about(request):
+    return render(request, 'about.html')

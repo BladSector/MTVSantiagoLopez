@@ -1,0 +1,40 @@
+{% extends 'base_templates.html' %}
+
+{% block title %}
+<title>Listado</title>
+{% endblock title %}
+
+
+{% block header %}
+
+          {% block title_h1 %}
+          <h1 class="mb-5">
+            <p>Listado de Santis</p>
+          </h1>
+          {% endblock title_h1 %}
+
+{% endblock header %}
+{% block pie_header %}
+<p>
+  <a href={% url 'crear_santi' %}>Crear Santi</a>
+</p>
+
+<p>
+  <form action={% url 'listado_santi' %}>
+    {{form}}
+    <button>Buscar</button>
+  </form>
+</p>
+
+<p>
+  {% if listado_santi %}
+  <ul>
+    {% for santi in listado_santi %}
+    <li>{{santi}}</li>
+    {% endfor %}
+  </ul>
+  {% else %}
+  No existen los datos ingresados.
+  {% endif %}
+</p>
+{% endblock pie_header %}

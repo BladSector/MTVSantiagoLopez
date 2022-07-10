@@ -1,0 +1,47 @@
+{% extends 'base_templates.html' %}
+
+
+{% block title %}
+<title>About</title>
+{% endblock title %}
+
+{% block header %}
+<header class="masthead">
+  <div class="container position-relative">
+    <div class="row justify-content-center">
+      <div class="col-xl-6">
+        <div class="text-center text-white">
+          {% block title_h1 %}
+          <h1 class="mb-5">Una humilde página<p>Comentarios</p></h1>
+          {% endblock title_h1 %}
+        </div>
+      </div>
+    </div>
+  </div>
+</header>
+{% endblock header %}
+
+{% block pie_header %}
+<div class="container position-relative">
+  <div class="text-center text-black">
+  Hola. Soy Santiago Lopez 😄.
+  </div>
+<ul><li>  Intente borrar los códigos y carpetas que no iba a utilizar sabiendo
+          que eran, obviamente. Para que sea más cómodo de revisar.
+    <li>  Tuve muchos contratiempos con los models y form, siempre me saltaban
+          errores, pero buscando soluciones entendí como funcionan y para qué
+          sirven.
+    <li>  Los nombres de las carpetas tienen nombres básicos, no los personalice
+          mucho.
+    <li>  Espero que el proyecto no tenga ningún error, le metí ímpetu.
+    <li>  Para la entrega final iniciaré un nuevo proyecto para poder mejorar
+          y personalizar, ya que sentí que no
+          me fue fácil realizar el mismo.
+          Éste quedará como guía junto con las
+          correcciones y detalles que me comenten.
+</ul>
+
+
+
+
+{% endblock pie_header %}

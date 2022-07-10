@@ -1,0 +1,28 @@
+{% extends 'base_templates.html' %}
+
+{% block title %}
+<title>Formulario</title>
+{% endblock title %}
+
+
+{% block header %}
+
+          {% block title_h1 %}
+          <h1 class="mb-5">
+            <p>Formulario</p>
+          </h1>
+          {% endblock title_h1 %}
+
+{% endblock header %}
+
+{% block pie_header %}
+<p>
+  <form action={% url 'crear_santi' %} method="post">
+    {% csrf_token %}
+    <table>
+      {{form.as_table}}
+    </table>
+    <button>Crear</button>
+  </form>
+</p>
+{% endblock pie_header %}
